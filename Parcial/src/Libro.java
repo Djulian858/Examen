@@ -110,10 +110,18 @@ public class Libro {
         return false;
     }
 
+    //metodo adicional 
+
+    public boolean disponible(int cantidad)
+    {
+        return (this.numeroEjemplares - this.numeroEjemplaresPrestados) >= cantidad;
+        
+    }
+
     public String toString ()
     {
         return "Titulo: " + this.titulo + ", autor: " + this.autor + ", Numero de Ejemplares: " + this.numeroEjemplares + 
-        ", Numero de Ejemplares Prestados: " + this.numeroEjemplaresPrestados;
+        ", Numero de Ejemplares Prestados: " + this.numeroEjemplaresPrestados + ", Genero: " + this.genero + ", ISBN: " + this.isbn;
     }
 
 
