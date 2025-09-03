@@ -1,2 +1,6 @@
 # Examen
-Jose Julian Velasquez Peñaloza y Luis Fernando Piamba Lugo
+
+## Parcial Programacion
+
+### Jose Julian Velasquez Peñaloza 
+### Luis Fernando Piamba Lugo
