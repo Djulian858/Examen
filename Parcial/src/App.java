@@ -7,7 +7,8 @@ public class App {
         
        //Creamos libro 1
 
-       Libro libro1 = new Libro("Caleñisimo","Luis Fernando",15,7);
+       Libro libro1 = new Libro("Caleñisimo","Luis Fernando",
+       15,7,"Entretenimiento","Sl 123");
 
        //Creamos el libro 2
 
@@ -69,6 +70,16 @@ public class App {
        } else {
            System.out.println("\nDevolución fallida... No hay ejemplares prestados.\n");
        }
+
+       // Probar el nuevo método esDisponible()
+        System.out.println("Probando el método disponible()...");
+        int cantidadSolicitada = 3;
+        System.out.println("Libro 1 tiene " + (libro1.getNumeroEjemplares() - libro1.getNumeroEjemplaresPrestados()) + " ejemplares disponibles.");
+        if (libro1.disponible(cantidadSolicitada)) {
+            System.out.println("El Libro 1 tiene " + cantidadSolicitada + " ejemplares disponibles para préstamo.");
+        } else {
+            System.out.println("El Libro 1 NO tiene " + cantidadSolicitada + " ejemplares disponibles para préstamo.");
+        }
 
        System.out.println("\n********************");
        System.out.println("         F I N");
