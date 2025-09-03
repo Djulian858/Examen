@@ -8,6 +8,8 @@ public class Libro {
 
     public Libro(){}
 
+    //constructor 
+
     public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados)
     {
         this.titulo = titulo;
@@ -15,6 +17,8 @@ public class Libro {
         this.numeroEjemplares = numeroEjemplares;
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
     }
+
+    // GET - SET
 
     public String getTitulo()
     {
@@ -35,5 +39,38 @@ public class Libro {
     {
         this.autor = autor;
     }
+
+    public int getNumeroEjemplares()
+    {
+        return numeroEjemplares;
+    }
+
+    public void setNumeroEjemplares(int numeroEjemplares)
+    {
+        this.numeroEjemplares = numeroEjemplares;
+    }
+
+    public int getNumeroEjemplaresPrestados()
+    {
+        return numeroEjemplaresPrestados;
+    }
+
+    public void setNumeroEjemplaresPrestados(int numeroEjemplaresPrestados)
+    {
+        this.numeroEjemplaresPrestados= numeroEjemplaresPrestados;
+    }
+
+    // metodo prestamo
+
+    public boolean prestamo()
+    {
+        if(this.numeroEjemplares > this.numeroEjemplaresPrestados)
+        {
+            this.numeroEjemplaresPrestados++;
+            return true;
+        }
+        return false;
+    }
+
 
 }
