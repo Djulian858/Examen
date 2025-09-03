@@ -72,5 +72,17 @@ public class Libro {
         return false;
     }
 
+    //metodo devolucion
+
+    public boolean devolucion()
+    {
+        if(this.numeroEjemplaresPrestados > 0)
+        {
+        this.numeroEjemplaresPrestados--;
+        return true;
+        }
+        return false;
+    }
+
 
 }
