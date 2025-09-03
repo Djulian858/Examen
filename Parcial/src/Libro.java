@@ -86,8 +86,8 @@ public class Libro {
 
     public String toString ()
     {
-        return "Titulo: " + this.titulo + "autor: " + this.autor + "Numero de Ejemplares: " + this.numeroEjemplares + 
-        "Numero de Ejemplares Prestados: " + this.numeroEjemplaresPrestados;
+        return "Titulo: " + this.titulo + ", autor: " + this.autor + ", Numero de Ejemplares: " + this.numeroEjemplares + 
+        ", Numero de Ejemplares Prestados: " + this.numeroEjemplaresPrestados;
     }
 
 
