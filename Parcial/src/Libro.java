@@ -3,6 +3,10 @@ public class Libro {
     private String autor;
     private int numeroEjemplares;
     private int numeroEjemplaresPrestados;
+
+    // Atributos adicionales
+    private String genero;
+    private String isbn;
     
     //constructor vacio
 
@@ -10,13 +14,15 @@ public class Libro {
 
     //constructor 
 
-    public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados)
+    public Libro(String titulo, String autor, int numeroEjemplares, int numeroEjemplaresPrestados, String genero, String isbn)
     {
         this.titulo = titulo;
         this.autor = autor;
         this.numeroEjemplares = numeroEjemplares;
         this.numeroEjemplaresPrestados = numeroEjemplaresPrestados;
-    }
+        this.genero = genero;
+        this.isbn = isbn;
+    } 
 
     // GET - SET
 
@@ -58,6 +64,26 @@ public class Libro {
     public void setNumeroEjemplaresPrestados(int numeroEjemplaresPrestados)
     {
         this.numeroEjemplaresPrestados= numeroEjemplaresPrestados;
+    }
+
+    public String getGenero()
+    {
+        return genero;
+    }
+
+    public void setGenero(String genero)
+    {
+        this.genero = genero;
+    }
+
+    public String getIsbn()
+    {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn)
+    {
+        this.isbn = isbn;
     }
 
     // metodo prestamo
